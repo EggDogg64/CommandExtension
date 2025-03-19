@@ -27,7 +27,6 @@ class DbWipe extends AbstractCommand
             $this->dbwipe();
         }
         else{
-            // ロールバックは設定されている場合はtrue、またはそれに添付されている値が整数として表されます。
             if($backup === true){
                 printf("Starting backup and db-wipe ....");
                 $this -> backup();
