@@ -65,7 +65,7 @@ class DbWipe extends AbstractCommand
         $dbname =  Settings::env('DATABASE_NAME') ;   // 削除するデータベース名
 
         $command = "mysqldump -u {$username} -p {$dbname} > ";
-        date_default_timezone_set('Asia/Tokyo');
+       
 
         $filename = sprintf(
             '%s_backup.sql',
